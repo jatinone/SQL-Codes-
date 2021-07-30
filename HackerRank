@@ -1,0 +1,18 @@
+
+STEP 1 for Pivot Table HAckerRack
+SELECT
+    case when Occupation='Doctor' then Name end as Doctor,
+    case when Occupation='Professor' then Name end as Professor,
+    case when Occupation='Singer' then Name end as Singer,
+    case when Occupation='Actor' then Name end as Actor
+FROM OCCUPATIONS 
+
+RESULT =>
+==============================
+Ashley NULL NULL NULL
+NULL NULL NULL Samantha
+NULL Julia NULL NULL
+Britney NULL NULL NULL
+Maria NULL NULL NULL
+Meera NULL NULL NULL
+==============================
